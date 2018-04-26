@@ -1,5 +1,10 @@
-SECRET_KEY = 'o&)%bwhyl5(g)%rmq+knp%75y9s@j!a-x#3oh^rzuw$$=nld*x'
 from basic import *
+import uuid
+
+uuid._uuid_generate_random = None
+
+SECRET_KEY = 'o&)%bwhyl5(g)%rmq+knp%75y9s@j!a-x#3oh^rzuw$$=nld*x'
+
 DEBUG = True
 TEMPLATE_DEBUG = True
 DATABASES = {
